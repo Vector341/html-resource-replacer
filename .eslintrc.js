@@ -1,4 +1,11 @@
 module.exports = {
   root: true,
-  extends: ["@webpack-contrib/eslint-config-webpack", "prettier"],
+  extends: ["prettier"],
+  env: {
+    es6: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2015,
+    sourceType: "module",
+  },
 };
